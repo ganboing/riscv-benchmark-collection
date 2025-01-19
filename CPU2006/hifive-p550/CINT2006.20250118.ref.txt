@@ -1,0 +1,228 @@
+                           SPEC(R) CINT2006 Summary
+                      SiFive SiFive HiFive Premier P550
+                           Test Sponsor: Community
+                           Sat Jan 18 10:00:31 2025
+
+CPU2006 License: 0                                       Test date: Jan-2025
+Test sponsor: Community                      Hardware availability: Oct-2024
+Tested by:    Community                      Software availability: Jan-2024
+
+                Base     Base       Base        Peak     Peak       Peak
+Benchmarks      Ref.   Run Time     Ratio       Ref.   Run Time     Ratio
+-------------- ------  ---------  ---------    ------  ---------  ---------
+400.perlbench    9770       1379       7.09 *                                  
+400.perlbench    9770       1379       7.09 S                                  
+400.perlbench    9770       1381       7.07 S                                  
+401.bzip2        9650       1213       7.95 S                                  
+401.bzip2        9650       1219       7.92 S                                  
+401.bzip2        9650       1216       7.94 *                                  
+403.gcc          8050        968       8.31 S                                  
+403.gcc          8050        971       8.29 S                                  
+403.gcc          8050        971       8.29 *                                  
+429.mcf          9120       1455       6.27 S                                  
+429.mcf          9120       1462       6.24 S                                  
+429.mcf          9120       1461       6.24 *                                  
+445.gobmk       10490       1050       9.99 *                                  
+445.gobmk       10490       1052       9.97 S                                  
+445.gobmk       10490       1049      10.00 S                                  
+456.hmmer        9330       1086       8.59 S                                  
+456.hmmer        9330       1087       8.59 *                                  
+456.hmmer        9330       1088       8.57 S                                  
+458.sjeng       12100       1560       7.76 S                                  
+458.sjeng       12100       1567       7.72 S                                  
+458.sjeng       12100       1563       7.74 *                                  
+462.libquantum  20720       2142       9.67 S                                  
+462.libquantum  20720       2119       9.78 *                                  
+462.libquantum  20720       2108       9.83 S                                  
+464.h264ref     22130       1938      11.4  *                                  
+464.h264ref     22130       1941      11.4  S                                  
+464.h264ref     22130       1937      11.4  S                                  
+471.omnetpp      6250       1284       4.87 *                                  
+471.omnetpp      6250       1286       4.86 S                                  
+471.omnetpp      6250       1284       4.87 S                                  
+473.astar        7020       1006       6.98 *                                  
+473.astar        7020       1007       6.97 S                                  
+473.astar        7020       1005       6.98 S                                  
+483.xalancbmk    6900        935       7.38 S                                  
+483.xalancbmk    6900        937       7.36 *                                  
+483.xalancbmk    6900        938       7.36 S                                  
+==============================================================================
+400.perlbench    9770       1379       7.09 *                                  
+401.bzip2        9650       1216       7.94 *                                  
+403.gcc          8050        971       8.29 *                                  
+429.mcf          9120       1461       6.24 *                                  
+445.gobmk       10490       1050       9.99 *                                  
+456.hmmer        9330       1087       8.59 *                                  
+458.sjeng       12100       1563       7.74 *                                  
+462.libquantum  20720       2119       9.78 *                                  
+464.h264ref     22130       1938      11.4  *                                  
+471.omnetpp      6250       1284       4.87 *                                  
+473.astar        7020       1006       6.98 *                                  
+483.xalancbmk    6900        937       7.36 *                                  
+ SPECint(R)_base2006                   7.84
+ SPECint2006                                                        Not Run
+
+
+                                   HARDWARE
+                                   --------
+            CPU Name: eswin,eic770x
+ CPU Characteristics: ESWIN EIC7700X Running at 1.4Ghz
+             CPU MHz: 1400
+                 FPU: Integrated
+      CPU(s) enabled: 4 cores, could not determine chips, 4 cores/chip
+    CPU(s) orderable: 1,2 chips
+       Primary Cache: 32 KB I + 32 KB D on chip per core
+     Secondary Cache: 256 KB I+D on chip per chip
+            L3 Cache: 4 MB I+D on chip per chip
+         Other Cache: None
+              Memory: 16 GB
+                      11.625 GB fixme: If using DDR3, format is:
+                      'N GB (M x N GB nRxn PCn-nnnnnR-n, ECC)'
+      Disk Subsystem: 234 GB  add more disk info here
+      Other Hardware: None
+
+
+                                   SOFTWARE
+                                   --------
+    Operating System: Ubuntu 24.04
+                      Ubuntu 24.04.1 LTS
+                      6.6.21-ganboing
+            Compiler: gcc, g++ 13.3
+       Auto Parallel: No
+         File System: ext4
+        System State: Run level 5 (add definition here)
+       Base Pointers: 64-bit
+       Peak Pointers: Not Applicable
+      Other Software: None
+
+
+                                 Submit Notes
+                                 ------------
+    See the configuration file for details.
+
+                                Platform Notes
+                                --------------
+     Sysinfo program /cpu2006-1.2/Docs/sysinfo
+     $Rev: 6775 $ $Date:: 2011-08-16 #$ b78a1e535dc16b9318bf49af398d17b1
+     running on ubuntu Sat Jan 18 10:00:33 2025
+    
+     This section contains SUT (System Under Test) info as seen by
+     some common utilities.  To remove or add to this section, see:
+       http://www.spec.org/cpu2006/Docs/config.html#sysinfo
+    
+     From /proc/cpuinfo
+        uarch : eswin,eic770x
+     *
+     * 0 "physical id" tags found.  Perhaps this is an older system,
+     * or a virtualized system.  Not attempting to guess how to
+     * count chips/cores for this system.
+     *
+           4 "processors"
+        cores, siblings (Caution: counting these is hw and system dependent.  The
+        following excerpts from /proc/cpuinfo might not be reliable.  Use with
+        caution.)
+    
+     From /proc/meminfo
+        MemTotal:       12189508 kB
+        HugePages_Total:       0
+        Hugepagesize:       2048 kB
+    
+     /usr/bin/lsb_release -d
+        Ubuntu 24.04.1 LTS
+    
+     From /etc/*release* /etc/*version*
+        debian_version: trixie/sid
+        os-release:
+           PRETTY_NAME="Ubuntu 24.04.1 LTS"
+           NAME="Ubuntu"
+           VERSION_ID="24.04"
+           VERSION="24.04.1 LTS (Noble Numbat)"
+           VERSION_CODENAME=noble
+           ID=ubuntu
+           ID_LIKE=debian
+           HOME_URL="https://www.ubuntu.com/"
+    
+     uname -a:
+        Linux ubuntu 6.6.21-ganboing #7 SMP PREEMPT_DYNAMIC Sat Jan 11 15:31:46 PST
+        2025 riscv64 riscv64 riscv64 GNU/Linux
+    
+     run-level 5 Jan 18 00:53
+    
+     SPEC is set to: /cpu2006-1.2
+        Filesystem     Type  Size  Used Avail Use% Mounted on
+        /dev/sda       ext4  234G   27G  196G  13% /cpu2006-1.2
+    
+     (End of data from sysinfo program)
+
+                           Base Compiler Invocation
+                           ------------------------
+C benchmarks: 
+     gcc
+
+C++ benchmarks: 
+     g++
+
+
+                            Base Portability Flags
+                            ----------------------
+  400.perlbench: -DSPEC_CPU_LP64 -DSPEC_CPU_LINUX
+      401.bzip2: -DSPEC_CPU_LP64
+        403.gcc: -DSPEC_CPU_LP64
+        429.mcf: -DSPEC_CPU_LP64
+      445.gobmk: -DSPEC_CPU_LP64
+      456.hmmer: -DSPEC_CPU_LP64
+      458.sjeng: -DSPEC_CPU_LP64
+ 462.libquantum: -DSPEC_CPU_LP64 -DSPEC_CPU_LINUX
+    464.h264ref: -DSPEC_CPU_LP64
+    471.omnetpp: -DSPEC_CPU_LP64
+      473.astar: -DSPEC_CPU_LP64
+  483.xalancbmk: -DSPEC_CPU_LP64 -DSPEC_CPU_LINUX
+
+
+                           Base Optimization Flags
+                           -----------------------
+C benchmarks:
+
+  400.perlbench: -O3 -fno-strict-aliasing -march=rv64gc_zba_zbb
+                 -mcpu=sifive-u74 -mtune=sifive-7-series -fgnu89-inline(*)
+
+      401.bzip2: -O3 -fno-strict-aliasing -march=rv64gc_zba_zbb
+                 -mcpu=sifive-u74 -mtune=sifive-7-series
+
+        403.gcc: Same as 401.bzip2
+
+        429.mcf: Same as 401.bzip2
+
+      445.gobmk: Same as 401.bzip2
+
+      456.hmmer: Same as 401.bzip2
+
+      458.sjeng: Same as 401.bzip2
+
+ 462.libquantum: Same as 401.bzip2
+
+    464.h264ref: Same as 401.bzip2
+
+C++ benchmarks: 
+     -O3 -fno-strict-aliasing -march=rv64gc_zba_zbb -mcpu=sifive-u74
+     -mtune=sifive-7-series
+
+(*) Indicates optimization flags found in portability variables
+
+                               Base Other Flags
+                               ----------------
+C benchmarks:
+
+    464.h264ref: -fsigned-char
+
+
+    SPEC and SPECint are registered trademarks of the Standard Performance
+    Evaluation Corporation.  All other brand and product names appearing
+    in this result are trademarks or registered trademarks of their
+    respective holders.
+-----------------------------------------------------------------------------
+For questions about this result, please contact the tester.
+For other inquiries, please contact webmaster@spec.org.
+Copyright 2006-2025 Standard Performance Evaluation Corporation
+Tested with SPEC CPU2006 v1.2.
+Report generated on Sat Jan 18 23:47:46 2025 by CPU2006 ASCII formatter v6400.
